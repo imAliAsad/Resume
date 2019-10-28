@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Ali Asad
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://linkedin.com/in/imaliasad/}{\Large Ali Asad}} & Email : \href{mailto:imaliasad@outlook.com}{imaliasad@outlook.com}\\
+  \href{http://linkedin.com/in/imaliasad/}{http://www.linkedin.com/in/imaliasad} & Mobile : +971-522-929-527 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Archcorp Architectural Engineering}{Dubai, UAE}
+      {Software Engineer}{Oct 2017 - Present}
+      
+      \newline \vspace{5pt} 
+      Leading machine learning products in automation and AI; full cycle ownership from research to production; brought first deep learning models into production at archcorp
+      \resumeItemListStart
+      \resumeItem{Natural Language Processing}
+        {used Google BERT, an NLP technique to develop a Question and Answering system for Contractual, Legal and Financial Documents, with F1 score of 93.160\% (high accuracy).}
+       \resumeItem{Recommendations}
+          {used linear regression, a classification technique to auto tag each page, paragraph and heading of a raw text document.}
+       \resumeItem{AutoML}
+          {wrote a high level API on top of Keras and Sklearn to recommend which machine learning model to use according to the data provided. Saves a lot of development time on trial and error.}
+        \resumeItem{Big Data}
+          {indexed the Data in Elastic Search, Query it, distribute the processes and improve performance with Spark and Hadoop.}
+        \resumeItem{Data Visualization}
+          {present business case in a narrative fashion by designing minimalist dashboards and reports using Power BI, matplotlib.py and google chart}
+
+        \resumeItem{Data Preprocessing}
+          {defined ETL steps, applied feature engineering, and A/B testing for designing the data pipeline }
+        \resumeItem{Deployment}
+          {used Jenkins and Docker to automate the CI/CD process. Notify the team whenever a build is updated or failed.}
+         \resumeItem{Notifications}
+          {service for sending email, push and in-app notifications. Built an internal app to run batch for all kind of notification on every hour}
+         \resumeItem{Automation}
+          {developed a bunch of plugins, and admin softwares to automate the daily mundane task.}
+         \resumeItem{Web Application}
+          {used Python Flask to develop a complete auto document analyzer solution, and ASP.NET MVC to develop and improve new or existing features of an ERP system.}
+        \resumeItem{Integration}
+          {integrate the ERP with existing/new module. Develop WPF app and integerate it with external services and API like Microsoft Graph API to extract all Office 3665 data, Wetransfer API to share files with external stakeholders etc.}
+         \resumeItem{Services}
+          {wrote web-services, and REST to expose endpoints.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsoft}{Lahore, PK}
+      {Intern}{May 2015 - Dec 2015} 
+      
+      \newline \vspace{5pt}
+      Responsible for the development, maintenance, and consultation of the .NET technologies to the local community of Pakistan
+      \resumeItemListStart
+        \resumeItem{Maintenance}
+          {fixed several integration/UI code issues, and helped improving the app performance by debugging and profiling}
+        \resumeItem{Research Assistant - Data Analyst}
+          {researched all universities student data and suggested a road map they should follow based on their interest.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Publications-----------------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Technical Reviewer}{}
+    {Book: Neural Networks in Unity}{Jun. 2018}
+
+    \resumeSubheading
+      {Co Author}{}
+      {Book: The C\# Programmer’s Study Guide (MCSD): Exam 70–483}{Apr. 2017}    
+  \resumeSubHeadingListEnd
+
+
+
+%-----------Certifications-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+   \resumeSubItem{C\# Specialization}
+      {by Microsoft}
+       \resumeSubItem{Python Specialization}
+      {by University of Michigan}
+        \resumeSubItem{Tensorflow Specialization}
+      {by deeplearning.ai}
+    \resumeSubItem{Deep Learning Specialization}
+      {by deeplearning.ai}
+       \resumeSubItem{Machine Learning and Matlab}
+      {by MathWorks}
+    \resumeSubItem{Developing Business Applications with Microsoft PowerApps, CDS, and Flow}{by Microsoft}
+    
+     
+  \resumeSubHeadingListEnd
+  
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Auto Contract Analyzer}
+      {analyze contract document and auto recommend scope, schedule and risk of a project.}
+    \resumeSubItem{Applicant Tracking System}
+      {auto recommend top applicants and track the whole recruitment process.}
+    \resumeSubItem{Auto Model Selector}
+      {machine learning API that suggest which  model is best fit according to the provided data-set.}
+  \resumeSubHeadingListEnd
+  
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Gujrat}{Gujrat, PK}
+      {Bachelor of Science in Software Engineering}{Aug. 2012 -- Dec. 2016}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python, Javascript, C\#, C++, SQL, Java}
+    }
+     \item{
+      \textbf{Machine Learning}{: Tensorflow, Sklearn, Keras, Theano}
+    }
+    \item{
+     \textbf{Data Science}{: Numpy, Pandas, Matplotlib, Power BI, Excel }
+    }
+    \item{
+     \textbf{Big Data}{: Spark, Hadoop, Elastic Search, Kafka }
+    }
+    \item{
+     \textbf{Web Application}{: Python Flask, ASP.NET MVC, Angular.JS }
+    }
+    \item{
+     \textbf{Desktop Application}{: WPF, Windows Form }
+    }
+    \item{
+     \textbf{Deployment}{: Jenkins, Docker }
+    }
+    \item{
+       \textbf{IDE}{: ViSual Studio Code, Atom, Jupyter Notebook, Visual Studio, Matlab}
+    }
+     \item{
+     \textbf{Others}{:  Microsoft Power APP, Xamarin, Android Studio }
+    }
+    
+    
+      
+  \resumeSubHeadingListEnd
+
+
+\end{document}
